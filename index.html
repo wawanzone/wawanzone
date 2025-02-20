@@ -73,19 +73,19 @@
                 <div
                     class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
                     <div class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-                        <!-- <button
+                        <button
                             class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500"
-                            aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-hoax-checker"
-                            data-hs-overlay="#hs-hoax-checker">
+                            aria-haspopup="dialog" aria-expanded="false" aria-controls="race-game"
+                            data-hs-overlay="#race-game">
                             <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                                 <circle cx="12" cy="7" r="4" />
                             </svg>
-                            Hoax Checker<span
-                                class="inline-flex items-center gap-x-1.5 mx-2 py-1 px-1 rounded text-xs font-medium bg-teal-100 text-teal-800">New</span>
-                        </button> -->
+                            Game<span
+                                class="inline-flex items-center gap-x-1.5 mx-1 py-1 px-1 rounded text-xs font-medium bg-teal-100 text-teal-800">New</span>
+                        </button>
                         <button
                             class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500"
                             aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-remove-bg"
@@ -96,7 +96,7 @@
                                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                                 <circle cx="12" cy="7" r="4" />
                             </svg>
-                            Remove Bg 
+                            Remove Bg
                         </button>
 
                         <button
@@ -923,7 +923,7 @@
     </div>
 
 
-    <div id="hs-hoax-checker"
+    <div id="race-game"
         class="hs-overlay hidden size-full absolute top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
         role="dialog" tabindex="-1" aria-labelledby="hs-full-screen-label">
         <div
@@ -933,13 +933,12 @@
                 <div class="flex max-w-6xl mx-auto w-full justify-between items-center py-3 px-6 border-b">
                     <div class="flex gap-4 items-center">
                         <a class=" font-semibold text-base text-black focus:outline-none focus:opacity-80 flex gap-4 items-center"
-                            href="#" aria-label="Brand"><img src="img/wawanzone.png" class="size-12" alt=""> Hoax
-                            Checker</a>
+                            href="#" aria-label="Brand"><img src="img/wawanzone.png" class="size-12" alt=""> Game</a>
 
                     </div>
                     <button type="button"
                         class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none "
-                        aria-label="Close" data-hs-overlay="#hs-hoax-checker">
+                        aria-label="Close" data-hs-overlay="#race-game">
                         <span class="sr-only">Close</span>
                         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -952,24 +951,48 @@
                 <div
                     class="max-w-6xl text-white px-4 sm:px-6 mt-8 mx-auto flex flex-col justify-between h-[calc(100vh-70px)] w-full   overflow-y-auto overflow-x-hidden">
                     <div>
-                        <textarea id="inputText" class="w-full p-2 border-2 border-gray-400 rounded-lg text-black  focus:ring-blue-500"
+                        <!-- <textarea id="inputText" class="w-full p-2 border-2 border-gray-400 rounded-lg text-black  focus:ring-blue-500"
                         rows="5" placeholder="Masukkan teks untuk dicek..."></textarea>
                     <button id="checkButton"
                         class="mt-3 w-full bg-blue-600 text-white font-semibold p-2 rounded-lg hover:bg-blue-700">Cek
                         Hoax</button>
 
-                    <!-- Loader -->
                     <div id="loader" class="hidden flex items-center justify-center mt-5">
                         <div class="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500"></div>
                     </div>
 
                     <div id="result" class="mt-4 p-2 text-white font-semibold text-center hidden"></div>
-                    </div>
+                    </div> -->
+                        <iframe id="game-iframe" width="100%" height="800" style="border: none;"
+                            allow="camera; microphone" class="rounded-lg">
+                        </iframe>
 
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.querySelector("#race-game");
+            const iframe = document.querySelector("#game-iframe");
+            const closeButton = document.querySelector("[data-hs-overlay='#race-game'][aria-label='Close']");
+            const gameURL = "https://wawanzone.com/race"; // Ganti dengan URL game yang ingin dimuat
+
+            document.querySelector("[data-hs-overlay='#race-game']").addEventListener("click", function () {
+                iframe.src = gameURL; // Set src hanya saat tombol diklik
+            });
+
+            closeButton.addEventListener("click", function () {
+                if (iframe) {
+                    iframe.src = ""; // Hapus URL dalam iframe saat tombol close diklik
+                }
+            });
+        });
+
+    </script>
 
     <!-- Footer -->
     <div class=" bg-gradient-to-t from-white mx-auto w-full ">
