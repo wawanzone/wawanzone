@@ -348,7 +348,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mt-2 bg-teal-100 border border-teal-200 text-sm text-teal-800 rounded-lg p-4 dark:bg-teal-800/10 dark:border-teal-900 dark:text-teal-500" role="alert" tabindex="-1" aria-labelledby="hs-soft-color-success-label">
+                                    <div id="free-domain-info" class=" mt-2 bg-teal-100 border border-teal-200 text-sm text-teal-800 rounded-lg p-4 dark:bg-teal-800/10 dark:border-teal-900 dark:text-teal-500" role="alert" tabindex="-1" aria-labelledby="hs-soft-color-success-label">
                                         <span id="hs-soft-color-success-label" class="font-bold">Selamat</span> Kamu berhak mendapatkan domain gratis <b>.COM</b> , <b>.MY.ID</b> , <b>.BIZ.ID</b>
                                       </div>
                                 </div>
@@ -367,7 +367,7 @@
                                                     class="w-full cursor-pointer ms-3 hs-tooltip-toggle">
                                                 <span class="block text-sm font-semibold text-gray-800 ">SSL</span>
                                                 <span
-                                                    class="absolute z-10 invisible inline-block w-48 px-4 py-2 text-sm text-white transition-opacity bg-gray-900 opacity-0 rounded-xl hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible"
+                                                    class="absolute z-10 invisible inline-block w-48 px-4 py-2 text-xs text-white transition-opacity bg-gray-900 opacity-0 rounded-xl hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible"
                                                     role="tooltip">
                                                 Pastikan keamanan website kamu dan naikkan posisi pencarian di
                                                 google dengan SSL https://
@@ -462,14 +462,13 @@
                     </div>
                 </div>
                 <aside>
-                    <div class="flex flex-col w-full bg-white min-w-[400px] rounded-xl sticky top-24 " id="summary">
+                    <div class="flex flex-col w-full bg-white md:min-w-[400px] rounded-xl sticky top-24 " id="summary">
                         <div class="p-4 md:p-5">
                             <div class="grid grid-cols-1 gap-4 ">
                                 <h4 class="text-2xl font-semibold">Summary</h4>
                                 <div
-                                    class="p-1.5 flex flex-col sm:flex-row items-center gap-2  bg-white border-2 border-gray-400 rounded-lg invert-0">
+                                    class="p-1.5 flex items-center gap-2 box-kupon bg-white border-2 border-gray-400 rounded-lg invert-0">
                                     <div class="relative w-full">
-                                        <label for="hero-input" class="sr-only">Subscribe</label>
                                         <div
                                             class="absolute inset-y-0 z-20 flex items-center pointer-events-none start-0 ps-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -479,11 +478,11 @@
                                                     d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                                             </svg>
                                         </div>
-                                        <input type="text" id="hero-input" name="hero-input"
+                                        <input type="text" id="kupon-input" name="kupon-input"
                                             class="block w-full py-2 text-sm border-transparent rounded-lg ps-9 pe-3 focus:border-transparent focus:ring-transparent disabled:opacity-50 disabled:pointer-events-none"
                                             placeholder="Masukkan kupon">
                                     </div>
-                                    <button id="add-kupon" class="w-full sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border-transparent bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                                    <button id="add-kupon" class=" sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border-transparent bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                                         >
                                     Apply
                                 </button>
@@ -650,7 +649,8 @@
           </style>
            <script>
             const summaryList = document.querySelector('#summary ul');
-            const kuponInput = document.getElementById('hero-input');
+            const kuponInput = document.getElementById('kupon-input');
+            const boxKupon = document.getElementById('box-kupon');
             const applyKuponBtn = document.getElementById('add-kupon');
 
             const validCoupons = {
@@ -690,10 +690,11 @@
                         </div>
                     </li>
                 `);
-                
+
                 // Tambahkan harga paket ke total
                 const hargaPaket = parseFloat(harga.replace(/[^\d]/g, '')) || 0;
                 totalHarga += hargaPaket;
+                
 
                 // 2. Tambahkan add-ons yang dicentang ke summary
                 document.querySelectorAll('#add-on-hosting input[type="checkbox"]:checked').forEach(checkbox => {
@@ -753,6 +754,8 @@
                 `);
             }
 
+
+
             // Event listener untuk radio
             document.querySelectorAll('input[name="kontrak"]').forEach(radio => {
                 radio.addEventListener('change', updateSummary);
@@ -782,6 +785,30 @@
 
             // Jalankan pertama kali
             document.addEventListener('DOMContentLoaded', updateSummary);
+    
+            function toggleFreeDomainInfo() {
+                const selected = document.querySelector('input[name="kontrak"]:checked');
+                const freeDomainInfo = document.getElementById('free-domain-info');
+                const allowedValues = ['tera-12', 'tera-24', 'peta-12', 'peta-24'];
+
+                if (selected && allowedValues.includes(selected.value)) {
+                    freeDomainInfo.classList.remove('hidden');
+                } else {
+                    freeDomainInfo.classList.add('hidden');
+                }
+            }
+
+            // Panggil saat kontrak berubah
+            document.querySelectorAll('input[name="kontrak"]').forEach(radio => {
+                radio.addEventListener('change', () => {
+                    toggleFreeDomainInfo();
+                    updateSummary(); // Tetap panggil update summary jika ingin digabung
+                });
+            });
+
+            // Jalankan saat halaman dimuat
+            document.addEventListener('DOMContentLoaded', toggleFreeDomainInfo);
+
 
             </script>
             
