@@ -1089,44 +1089,49 @@
         type(); // Memulai efek mengetik
     </script>
         <script>
-  async function removeBackground(imageFile) {
-    const formData = new FormData();
-    formData.append('file', imageFile);
-
-    const loader = document.getElementById('loader');
-    loader.classList.remove('hidden');
-
-    try {
-      const res = await fetch('https://api.zpi.my.id/v1/utility/remove-bg', {
-        method: 'POST',
-        body: formData
-      });
-
-      const data = await res.json();
-      console.log("API Response:", data);
-
-      // Gunakan struktur data yang sesuai
-      const imageUrl = data?.response?.image?.preview;
-
-      if (!imageUrl) {
-        throw new Error("Image preview URL not found in response.");
-      }
-
-      const resultImg = document.getElementById("result-image");
-      resultImg.src = imageUrl;
-
-      const downloadButton = document.getElementById("download-button");
-      downloadButton.href = imageUrl;
-      downloadButton.download = "image-no-bg.png";
-      downloadButton.classList.remove("hidden");
-
-    } catch (error) {
-      console.error("An error occurred:", error);
-      alert(`An error occurred: ${error.message}`);
-    } finally {
-      loader.classList.add('hidden');
-    }
+ async function removeBackground(imageFile) {
+  if (!imageFile || !imageFile.type.startsWith('image/')) {
+    alert("File tidak valid. Harap upload gambar.");
+    return;
   }
+
+  const formData = new FormData();
+  formData.append('file', imageFile);
+
+  const loader = document.getElementById('loader');
+  loader.classList.remove('hidden');
+
+  try {
+    const response = await fetch('https://api.zpi.my.id/v1/utility/bg-remove', {
+      method: 'POST',
+      body: formData
+    });
+
+    const data = await response.json();
+    console.log("API Response:", JSON.stringify(data, null, 2));
+
+    const imageUrl = data?.response?.images?.preview;
+
+    if (!imageUrl) {
+      throw new Error("URL gambar tidak ditemukan dalam response.");
+    }
+
+    const resultImg = document.getElementById("result-image");
+    resultImg.src = imageUrl;
+
+    const downloadButton = document.getElementById("download-button");
+    downloadButton.href = imageUrl;
+    downloadButton.download = "image-no-bg.png";
+    downloadButton.classList.remove("hidden");
+
+  } catch (error) {
+    console.error("Terjadi kesalahan:", error);
+    alert(`Terjadi kesalahan: ${error.message}`);
+  } finally {
+    loader.classList.add('hidden');
+  }
+}
+
 
   const dropZone = document.getElementById('drop-zone');
   const uploadInput = document.getElementById('upload-image');
