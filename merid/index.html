@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mer.id</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet"/>
+    </head>
+    <body
+        class="text-stone-700">
+        <!-- ========== HEADER ========== -->
+        <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-theme-100 py-6">
+            <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center gap-x-1">
+                    <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Brand">
+                        <img src="assets/img/logo.svg" class="w-36" alt="">
+                    </a>
+                    <!-- Collapse Button -->
+                    <button type="button" class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-stone-700 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse" aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation" data-hs-collapse="#hs-header-base">
+                        <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6"/>
+                            <line x1="3" x2="21" y1="12" y2="12"/>
+                            <line x1="3" x2="21" y1="18" y2="18"/>
+                        </svg>
+                        <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <!-- End Collapse Button -->
+                </div>
+                <!-- Collapse -->
+                <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block " aria-labelledby="hs-header-base-collapse">
+                    <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+                        <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
+                            <div class="grow">
+                                <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-6 ">
+                                    <a class="py-1 md:py-3 flex items-center font-serif font-semibold  text-theme-600 border-y-2 border-transparent hover:border-theme-400  focus:outline-hidden " href="#" aria-current="page">
+                                        Beranda
+                                    </a>
+                                    <a class="py-1 md:py-3 flex items-center font-serif font-semibold text-theme-600 border-y-2 border-transparent hover:border-theme-400  focus:outline-hidden " href="#">
+                                        Tema
+                                    </a>
+                                    <a class="py-1 md:py-3 flex items-center font-serif font-semibold text-theme-600 border-y-2 border-transparent hover:border-theme-400  focus:outline-hidden " href="#">
+                                        Panduan Pengguna
+                                    </a>
+                                    <a class="py-1 md:py-3 flex items-center font-serif font-semibold text-theme-600 border-y-2 border-transparent hover:border-theme-400  focus:outline-hidden " href="#">
+                                        Kerjasama
+                                    </a>
+                                    <a class="py-1 md:py-3 flex items-center font-serif font-semibold text-theme-600 border-y-2 border-transparent hover:border-theme-400  focus:outline-hidden " href="#">
+                                        Hubungi Kami
+                                    </a>
+                                    <a class="py-2 px-4 max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-theme-500 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="dashboard.html">
+                                        Login
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Collapse -->
+            </nav>
+        </header>
+        <!-- ========== END HEADER ========== -->
+        <main>
+            <div class="bg-gradient-to-b to-theme-200 from-theme-100 overflow-hidden">
+                <div class="mx-auto max-w-7xl pt-10 flex max-md:flex-col px-4 w-full items-center gap-14">
+                    <div class="grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2  w-full content-end items-end max-md:order-2">
+                        <div class="border-[7px] mx-auto max-xl:hidden border-black rounded-t-3xl overflow-hidden relative w-[260px] h-[300px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-auto">
+                                        <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                            The wedding of
+                                        </div>
+                                        <div class="mb-3 font-serif text-3xl leading-4">
+                                            Raffi<br><span class="italic">Nagita</span>
+                                        </div>
+                                        <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                            25/8/2025
+                                        </div>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-900 text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                            Buat Undangan
+                                        </a>
+                                    </div>
+                                    <!-- <div class="block mb-2">
+                                                                                                                                                    <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                                                                                                                                        Pilih Tema
+                                                                                                                                                    </a>
+                                                                                                                                                    </div> -->
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1669050702565-c40de5777410?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDMzfHxiZWFjaCUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-lg:hidden border-black rounded-t-3xl  overflow-hidden relative w-[260px] h-[400px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-700 text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                            Buat Undangan
+                                        </a>
+                                    </div>
+                                    <!-- <div class="block mb-2">
+                                                                                                                                                    <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                                                                                                                                        Pilih Tema
+                                                                                                                                                    </a>
+                                                                                                                                                    </div> -->
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1501540798533-5d53df7b6c07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc2fHxjb3VwbGV8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-t-3xl z-10 overflow-hidden relative w-[260px] h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-800 text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                            Buat Undangan
+                                        </a>
+                                    </div>
+                                    <!-- <div class="block mb-2">
+                                                                                                                                                    <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                                                                                                                                        Pilih Tema
+                                                                                                                                                    </a>
+                                                                                                                                                    </div> -->
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1612991237712-49b879f27a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdXBsZSUyMHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                    </div>
+                    <div class="grid gap-4 h-fit md:order-1 max-w-sm max-md:text-center">
+                        <h1 class="text-6xl font-serif  tracking-tight">
+                            Undangan<br>Website
+                            <div class="text-lg tracking-normal leading-3 inline-block">by
+                                <br>
+                                mer.id
+                            </div>
+                        </h1>
+                        <p>Mulai rencanakan pernikahan impian kamu dari perencanaan awal, kelola tamu, kirim undangan, hingga proses check-in.</p>
+                        <div>
+                            <a class="py-3 px-4 w-fit  max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-theme-500 text-white hover:bg-theme-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                Buat Undangan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-[80vh] flex flex-col items-center justify-center">
+                <div class="mx-auto max-w-7xl py-20 md:flex px-4 w-full items-center gap-14">
+                    <div class="grid gap-8 h-fit md:w-6/12 mb-8">
+                        <h2 class="text-6xl font-serif tracking-tight mb-4 ">
+                            Fitur Menawan
+                        </h2>
+                        <div class="w-full">
+                            <div class="hs-accordion-group grid grid-cols-1 gap-2">
+                                <div class="hs-accordion bg-theme-100 rounded-xl active" id="hs-basic-heading-one">
+                                    <button class="hs-accordion-toggle justify-between hs-accordion-active:text-theme-500 px-6 py-3 inline-flex items-center gap-x-3  w-full font-semibold text-start text-stone-800 hover:text-stone-500 focus:outline-hidden focus:text-stone-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="true" aria-controls="hs-basic-collapse-one">
+                                        Smart Whatsapp
+                                        <svg class="hs-accordion-active:hidden hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 block size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg>
+                                        <svg class="hs-accordion-active:block hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 hidden size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="hs-basic-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-one">
+                                        <div class="pb-4 px-6">
+                                            <p class=" text-gray-600">
+                                                Undangan otomatis terkirim ke WhatsApp para tamu dengan satu klik.  Katsudoto menggunakan WhatsApp Business API resmi dari Facebook dan  sudah mendapatkan centang hijau, jadi dipastikan aman.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hs-accordion bg-theme-100 rounded-xl" id="hs-basic-heading-two">
+                                    <button class="hs-accordion-toggle justify-between hs-accordion-active:text-theme-500 px-6 py-3 inline-flex items-center gap-x-3  w-full font-semibold text-start text-stone-800 hover:text-stone-500 focus:outline-hidden focus:text-stone-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-two">
+                                        RSVP Tracking
+                                        <svg class="hs-accordion-active:hidden hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 block size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg>
+                                        <svg class="hs-accordion-active:block hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 hidden size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="hs-basic-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-two">
+                                        <div class="pb-4 px-6">
+                                            <p class=" text-gray-600">
+                                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hs-accordion bg-theme-100 rounded-xl" id="hs-basic-heading-three">
+                                    <button class="hs-accordion-toggle justify-between hs-accordion-active:text-theme-500 px-6 py-3 inline-flex items-center gap-x-3  w-full font-semibold text-start text-stone-800 hover:text-stone-500 focus:outline-hidden focus:text-stone-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-three">
+                                        Personalized Invitation
+                                        <svg class="hs-accordion-active:hidden hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 block size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg>
+                                        <svg class="hs-accordion-active:block hs-accordion-active:text-theme-500 hs-accordion-active:group-hover:text-theme-500 hidden size-4 text-gray-600 group-hover:text-stone-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                        </svg>
+                                    </button>
+                                    <div id="hs-basic-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-three">
+                                        <div class="pb-4 px-6">
+                                            <p class=" text-gray-600">
+                                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="py-3 px-4 w-fit  max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-theme-500 text-white hover:bg-theme-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                            Buat Undangan
+                        </a>
+                    </div>
+                    <div class="grid gap-4 w-full content-end items-end">
+                        <div class="border-[7px] border-black rounded-3xl w-full overflow-hidden relative md:h-[550px]">
+                            <img class="w-full h-full object-cover object-center object-left" src="assets/img/d1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-theme-100">
+                <div class="mx-auto max-w-7xl py-20 flex px-4 w-full items-center gap-14">
+                    <div class="grid gap-8 h-fit w-full">
+                        <h2 class="text-6xl font-serif tracking-tight mb-4 text-center">
+                            Paket Undangan
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                            <div class="bg-white p-12 rounded-3xl text-center grid grid-cols-1 gap-6">
+                                <div>
+                                    <div class="text-xs uppercase tracking-widest font-semibold text-stone-400">Gratis</div>
+                                    <div class="text-2xl font-semibold">Silver</div>
+                                </div>
+                                <div>
+                                    <ul class="list-disc text-left list-inside">
+                                        <li>Ragam Pilihan Template &amp; Warna</li>
+                                        <li>Countdown ke Waktu Acara</li>
+                                        <li>Profil Bride &amp; Groom</li>
+                                        <li>Galeri Foto</li>
+                                        <li>Rincian Acara</li>
+                                        <li>Peta Lokasi</li>
+                                        <li>Fitur Daftar Undangan</li>
+                                        <li>
+                                            <del class="text-stone-400">Fitur Broadcast Undangan</del>
+                                        </li>
+                                        <li>
+                                            <del class="text-stone-400">Fitur RSVP</del>
+                                        </li>
+                                        <li>
+                                            <del class="text-stone-400">Hadiah</del>
+                                        </li>
+                                        <li>Website Aktif Selama 6 Bulan</li>
+                                    </ul>
+                                </div>
+                                <div class="text-6xl font-serif tracking-tight mb-4 italic text-theme-500">
+                                    Free*
+                                </div>
+                                <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-theme-500 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                                    Buat Undangan
+                                </a>
+                            </div>
+                            <div class="bg-white p-12 rounded-3xl text-center grid grid-cols-1 gap-6">
+                                <div>
+                                    <div class="text-xs uppercase tracking-widest font-semibold text-stone-400">Gratis</div>
+                                    <div class="text-2xl font-semibold">Silver</div>
+                                </div>
+                                <div>
+                                    <ul class="list-disc text-left list-inside">
+                                        <li>Ragam Pilihan Template &amp; Warna</li>
+                                        <li>Countdown ke Waktu Acara</li>
+                                        <li>Profil Bride &amp; Groom</li>
+                                        <li>Galeri Foto</li>
+                                        <li>Rincian Acara</li>
+                                        <li>Peta Lokasi</li>
+                                        <li>Fitur Daftar Undangan</li>
+                                        <li>Fitur Broadcast Undangan</li>
+                                        <li>Fitur RSVP</li>
+                                        <li>Hadiah</li>
+                                        <li>Website Aktif Selama 6 Bulan</li>
+                                    </ul>
+                                </div>
+                                <div class="text-6xl font-serif tracking-tight mb-4 italic text-theme-500">
+                                    249<span class="text-base">K</span>
+                                </div>
+                                <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-theme-500 text-white hover:bg-theme-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                    Buat Undangan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-theme-800 text-white">
+                <div class="mx-auto max-w-7xl py-20 flex px-4 w-full items-center gap-14">
+                    <div class="grid gap-8 h-fit w-full text-center mx-auto max-w-3xl">
+                        <h2 class="text-4xl font-serif tracking-tight mb-4 text-center ">
+                            9.578 pasangan mempercayakan pernikahannya kepada kami, saatnya giliran kamu!
+                        </h2>
+                        <p class="text-theme-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam culpa mollitia veritatis harum, nesciunt deleniti perspiciatis fuga minima consectetur? Delectus error quo veritatis alias natus modi. Rem dolorum autem commodi nihil minima.</p>
+                        <div>
+                            <a class="py-3 px-4 w-fit  max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-theme-500 text-white hover:bg-theme-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                Buat Undangan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-[80vh] flex flex-col items-center justify-center">
+                <div class="mx-auto max-w-7xl py-20 grid grid-cols-1 gap-2 md:gap-12 px-4">
+                    <div class="md:flex  w-full items-center gap-14">
+                        <div class="grid gap-8 h-fit w-6/12">
+                            <h2 class="text-6xl font-serif tracking-tight mb-4 ">
+                                Tema Undangan
+                            </h2>
+                        </div>
+                        <div class="grid gap-4 w-full content-end items-end">
+                            <p class="text-theme-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam culpa mollitia veritatis harum, nesciunt deleniti perspiciatis fuga minima consectetur? Delectus error quo veritatis alias natus modi. Rem dolorum autem commodi nihil minima.</p>
+                        </div>
+                    </div>
+                    <div class="py-10 mx-auto w-fit">
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Semua
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-theme-500 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Modern
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Jawa
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Minang
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Bali
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Dayak
+                        </a>
+                        <a class="py-3 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-theme-100 text-theme-500 hover:text-white hover:bg-theme-500 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Internasional
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 max-md:grid-cols-1 max-xl:grid-cols-3 max-lg:grid-cols-2 gap-4 w-full content-end items-end">
+                        <div class="border-[7px] mx-auto max-md:hidden border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-auto">
+                                        <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                            The wedding of
+                                        </div>
+                                        <div class="mb-3 font-serif text-3xl leading-4">
+                                            Raffi<br><span class="italic">Nagita</span>
+                                        </div>
+                                        <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                            25/8/2025
+                                        </div>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-900 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1669050702565-c40de5777410?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDMzfHxiZWFjaCUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-xl:hidden border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-700 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1700353613564-2aa06fc96b88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-800 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1612991237712-49b879f27a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdXBsZSUyMHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-black text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1543932927-a9def13a0e7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cGxlfGVufDB8fDB8fHww" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-md:hidden border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-auto">
+                                        <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                            The wedding of
+                                        </div>
+                                        <div class="mb-3 font-serif text-3xl leading-4">
+                                            Raffi<br><span class="italic">Nagita</span>
+                                        </div>
+                                        <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                            25/8/2025
+                                        </div>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-900 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1562826772-be179f321470?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvdXBsZSUyMGRpdmV8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-xl:hidden border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-700 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1501540798533-5d53df7b6c07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc2fHxjb3VwbGV8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-theme-800 text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1559435578-231f6137aac5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[300px] overflow-hidden relative h-[550px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border border-transparent bg-black text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Preview Undangan
+                                        </a>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-500 disabled:pointer-events-none " href="#">
+                                            Pilih Tema
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1676690618005-c6bfc28347b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-theme-100 pb-20">
+                <div class="mx-auto max-w-7xl py-20 flex flex-col px-4 w-full items-center gap-14">
+                    <div class="grid gap-8 h-fit w-full text-center mx-auto max-w-3xl">
+                        <h2 class="text-4xl font-serif tracking-tight mb-4 text-center ">
+                            9.578 pasangan mempercayakan pernikahannya kepada kami, saatnya giliran kamu!
+                        </h2>
+                    </div>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card -->
+                        <div class="flex flex-col bg-white shadow-2xs rounded-xl">
+                            <div class="flex-auto p-4 md:p-6">
+                                <p class="mt-3 sm:mt-6 text-base text-stone-700 md:text-lg">
+                                    " I'm absolutely floored by the level of care and attention to detail the team at HS have put into this theme and for one can guarantee that I will be a return customer. "
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-b-xl md:px-6">
+                                <h3 class="text-sm font-semibold text-stone-700 sm:text-base">
+                                    Nicole Grazioso
+                                </h3>
+                                <p class="text-sm text-stone-500">
+                                    Director Payments & Risk | HubSpot
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                        <!-- Card -->
+                        <div class="flex flex-col bg-white shadow-2xs rounded-xl">
+                            <div class="flex-auto p-4 md:p-6">
+                                <p class="mt-3 sm:mt-6 text-base text-stone-700 md:text-lg">
+                                    " With Preline, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience. "
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-b-xl md:px-6">
+                                <h3 class="text-sm font-semibold text-stone-700 sm:text-base">
+                                    Josh Tyson
+                                </h3>
+                                <p class="text-sm text-stone-500">
+                                    Product Manager | Capsule
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                        <!-- Card -->
+                        <div class="flex flex-col bg-white shadow-2xs rounded-xl">
+                            <div class="flex-auto p-4 md:p-6">
+                                <p class="mt-3 sm:mt-6 text-base text-stone-700 md:text-lg">
+                                    " In September, I will be using this theme for 2 years. I went through multiple updates and changes and I'm very glad to see the consistency and effort made by the team. "
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-b-xl md:px-6">
+                                <h3 class="text-sm font-semibold text-stone-700 sm:text-base">
+                                    Luisa
+                                </h3>
+                                <p class="text-sm text-stone-500">
+                                    Senior Director of Operations | Fitbit
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-theme-600 text-white relative">
+                <div class="mx-auto max-w-7xl  flex max-md:flex-col px-4 w-full items-center gap-14 ">
+                    <img class="w-[400px] bottom-0 md:absolute object-cover object-center max-md:order-2" src="assets/img/m1.png" alt="">
+                    <div class="grid gap-8 h-fit pt-10 md:py-20 ml-auto md:w-1/2 order-1">
+                        <h2 class="text-4xl font-serif tracking-tight">
+                            Masih bingung mulai dari mana?
+                        </h2>
+                        <p class="text-theme-100">Kami siap bantu! Konsultasikan konsep undangan digital pernikahanmu secara gratis bersama tim kami. Jangan ragu untuk tanya-tanya dulu, tanpa biaya apapun. Klik tombol di bawah ini dan jadwalkan sesi konsultasimu sekarang!</p>
+                        <div>
+                            <a class="py-3 px-4 w-fit  max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-theme-500 text-white hover:bg-theme-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " href="#">
+                                Jadwalkan Konsultasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black text-theme-300">
+                <div class="mx-auto max-w-7xl py-5 flex max-md:flex-col justify-between px-4 gap-8 items-center">
+                    <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
+                        <img src="assets/img/logo.svg" class="w-36" alt="">
+                    </a>
+                    
+                    <p class="text-sm">© 2025 Mer.id build with love</p>
+                </div>
+
+            </div>
+        </main>
+        <script src="assets/js/preline.js"></script>
+    </body>
+</html>
