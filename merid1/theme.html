@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mer.id | Setting</title>
+        <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/logogram.svg">
+        <link href="assets/css/main.css" rel="stylesheet"/>
+    </head>
+    <body class="text-stone-700">
+        <div class="max-w-7xl mx-auto">
+            <div class="sticky top-0 inset-x-0 z-[1] bg-white border-y border-gray-200 px-4 sm:px-6 lg:px-8 lg:hidden">
+                <div
+                    class="flex items-center py-2">
+                    <!-- Navigation Toggle -->
+                    <button type="button" class="size-8 flex justify-center items-center gap-x-2 border border-gray-200 text-stone-700 hover:text-gray-500 rounded-lg focus:outline-hidden focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-application-sidebar" aria-label="Toggle navigation" data-hs-overlay="#hs-application-sidebar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="3" rx="2"/>
+                            <path d="M15 3v18"/>
+                            <path d="m8 9 3 3-3 3"/>
+                        </svg>
+                    </button>
+                    <!-- End Navigation Toggle -->
+                    <!-- Breadcrumb -->
+                    <ol class="ms-3 flex items-center whitespace-nowrap">
+                        <li class="flex items-center text-sm text-stone-800">
+                            Application Layout
+                            <svg class="shrink-0 mx-3 overflow-visible size-2.5 text-gray-400" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </li>
+                        <li class="text-sm font-semibold text-stone-700 truncate" aria-current="page">
+                            Dashboard
+                        </li>
+                    </ol>
+                    <!-- End Breadcrumb -->
+                </div>
+            </div>
+            <div id="hs-application-sidebar" class="hs-overlay z-[1] [--auto-close:lg] hs-overlay-open:bg-white hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-64 h-full hidden fixed  lg:block lg:translate-x-0 lg:end-auto lg:bottom-0" role="dialog" tabindex="-1" aria-label="Sidebar">
+                <div class="relative flex flex-col h-full max-h-full pt-10">
+                    <div
+                        class="px-6  flex items-center">
+                        <!-- Logo -->
+                        <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80" href="index.html" aria-label="Preline">
+                            <img src="assets/img/logo.svg" class="w-36" alt="">
+                        </a>
+                        <!-- End Logo -->
+                        <div class="hidden lg:block ms-2"></div>
+                    </div>
+                    <!-- Content -->
+                    <div class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+                        <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+                            <div class="py-2 px-2.5 text-sm text-gray-400">Menu</div>
+                            <ul class="flex flex-col space-y-1">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-theme-600 rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="dashboard.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-theme-600">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"/>
+                                        </svg>
+                                        Undangan
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                                                                                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="vip.html">
+                                                                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-stone-400">
+                                                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+                                                                                                        </svg>
+                                                                                                        VIP
+                                                                                                    </a>
+                                                                                                </li> -->
+                                <li>
+                                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="upgrade.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-stone-400">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                        </svg>
+                                        Upgrade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="https://www.youtube.com/" target="_blank">
+                                        <svg class="shrink-0 size-6 text-stone-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                        </svg>
+                                        Tutorial
+                                    </a>
+                                </li>
+                                <li>
+                                    <button type="button" class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-basic-modal" data-hs-overlay="#hs-basic-modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class=" shrink-0 size-6 text-stone-400">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"/>
+                                        </svg>
+                                        Modal
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+                            <div class="py-2 px-2.5 text-sm text-gray-400">Akun Saya</div>
+                            <ul class="flex flex-col space-y-1">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="setting.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-stone-400">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                        </svg>
+                                         Tema
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="order.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-stone-400">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
+                                        </svg>
+                                        Transaksi
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-theme-600/10 focus:outline-hidden focus:bg-gray-100" href="login.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 text-stone-400">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+                                        </svg>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Content -->
+                </div>
+            </div>
+            <div class="w-full pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 grid grid-cols-1 gap-6">
+                <div class=" grid gap-3 md:flex md:justify-between md:items-center ">
+                    <h2 class="text-xl pt-3 font-semibold text-stone-700">
+                        Pengaturan
+                    </h2>
+                </div>
+                <div class="bg-theme-100  rounded-xl p-4 pb-6 px-6 shadow-2xs overflow-hidden grid gap-4">
+                    <div class="capitalize mb-4 font-medium">
+                        Pilih Tema
+                    </div>
+                    <div class="pb-10 w-fit">
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Semua
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-theme-600 text-theme-600 hover:text-white hover:bg-theme-700 hover:border-transparent focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Modern
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Jawa
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Minang
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Bali
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Dayak
+                        </a>
+                        <a class="py-2 px-4 w-fit mx-auto max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-full  border-2 border-transparent bg-white text-theme-600 hover:text-white hover:bg-theme-700 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" href="#">
+                            Internasional
+                        </a>
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-6 mb-8">
+                        <div class="border-[7px] mx-auto max-md:hidden border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-auto">
+                                        <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                            The wedding of
+                                        </div>
+                                        <div class="mb-3 font-serif text-3xl leading-4">
+                                            Raffi<br><span class="italic">Nagita</span>
+                                        </div>
+                                        <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                            25/8/2025
+                                        </div>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1669050702565-c40de5777410?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDMzfHxiZWFjaCUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-xl:hidden border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1700353613564-2aa06fc96b88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1612991237712-49b879f27a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdXBsZSUyMHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1543932927-a9def13a0e7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cGxlfGVufDB8fDB8fHww" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-md:hidden border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-auto">
+                                        <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                            The wedding of
+                                        </div>
+                                        <div class="mb-3 font-serif text-3xl leading-4">
+                                            Raffi<br><span class="italic">Nagita</span>
+                                        </div>
+                                        <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                            25/8/2025
+                                        </div>
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1562826772-be179f321470?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvdXBsZSUyMGRpdmV8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto max-xl:hidden border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1501540798533-5d53df7b6c07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc2fHxjb3VwbGV8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1559435578-231f6137aac5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                        <div class="border-[7px] mx-auto border-black rounded-3xl w-[200px] overflow-hidden relative h-[350px]">
+                            <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-black/0 via-black/0 p-2">
+                                <div class="text-center  text-white absolute inset-x-0 bottom-5 ">
+                                    <div class="mb-3 uppercase text-[8px] tracking-wide">
+                                        The wedding of
+                                    </div>
+                                    <div class="mb-3 font-serif text-3xl leading-4">
+                                        Raffi<br><span class="italic">Nagita</span>
+                                    </div>
+                                    <div class="mb-6 uppercase text-[10px] tracking-wide">
+                                        25/8/2025
+                                    </div>
+                                    <div class="block mb-2">
+                                        <a class="py-2 px-4 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border bg-transparent text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="setting.html">
+                                            Pilih Tema
+                                        </a>
+                                        <a class="p-2.5 w-fit max-md:mt-4 inline-flex items-center justify-center gap-x-2 text-xs  rounded-full border  text-white  focus:outline-hidden disabled:opacity-50 hover:bg-theme-700 disabled:pointer-events-none " href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="w-full h-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1676690618005-c6bfc28347b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex justify-end items-center gap-x-2">
+                        <!-- Pagination -->
+                        <nav class="flex items-center gap-x-1" aria-label="Pagination">
+                            <button type="button" class="min-h-9.5 min-w-9.5 py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-theme-600 hover:bg-theme-100 focus:outline-hidden focus:bg-theme-100 disabled:opacity-50 disabled:pointer-events-none" aria-label="Previous" disabled="">
+                                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m15 18-6-6 6-6"></path>
+                                </svg>
+                                <span>Previous</span>
+                            </button>
+                            <div class="flex items-center gap-x-1">
+                                <button type="button" class="min-h-9.5 min-w-9.5 flex justify-center items-center bg-theme-200/50 text-theme-600 py-2 px-3 text-sm rounded-lg focus:outline-hidden focus:bg-theme-300 disabled:opacity-50 disabled:pointer-events-none" aria-current="page">1</button>
+                                <button type="button" class="min-h-9.5 min-w-9.5 flex justify-center items-center text-theme-600 hover:bg-theme-100 py-2 px-3 text-sm rounded-lg focus:outline-hidden focus:bg-theme-100 disabled:opacity-50 disabled:pointer-events-none">2</button>
+                                <button type="button" class="min-h-9.5 min-w-9.5 flex justify-center items-center text-theme-600 hover:bg-theme-100 py-2 px-3 text-sm rounded-lg focus:outline-hidden focus:bg-theme-100 disabled:opacity-50 disabled:pointer-events-none">3</button>
+                            </div>
+                            <button type="button" class="min-h-9.5 min-w-9.5 py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-theme-600 hover:bg-theme-100 focus:outline-hidden focus:bg-theme-100 disabled:opacity-50 disabled:pointer-events-none" aria-label="Next">
+                                <span>Next</span>
+                                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+                        </nav>
+                        <!-- End Pagination -->
+                    </div>
+
+                </div>
+
+
+                <!-- <input
+                                                                                                                                                                        id="datepicker" type="text" class="hs-input w-full border rounded-md p-2" placeholder="Pilih tanggal"> -->
+
+                <div id="hs-basic-modal" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-10 opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="hs-basic-modal-label">
+                    <div class="sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+                        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto">
+                            <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200">
+                                <h3 id="hs-basic-modal-label" class="font-bold text-stone-700">
+                                    Modal title
+                                </h3>
+                                <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-stone-700 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#hs-basic-modal">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto">
+                                <p class="mt-1 text-stone-700">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
+                            <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t border-gray-200">
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-stone-700 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-basic-modal">
+                                    Close
+                                </button>
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-orange-700/80 text-white hover:bg-orange-700 focus:outline-hidden focus:bg-orange-700 disabled:opacity-50 disabled:pointer-events-none">
+                                    Save changes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- DataTables JS -->
+        <script src="assets/js/datatable/index.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <!-- Datepicker -->
+        <!-- Flatpickr CSS -->
+        <link
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <!-- Flatpickr JS -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            flatpickr("#datepicker", {dateFormat: "Y-m-d"});
+        </script>
+
+        <!-- Preline -->
+        <script src="assets/js/preline.js"></script>
+
+    </body>
+</html>

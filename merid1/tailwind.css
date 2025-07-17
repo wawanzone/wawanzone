@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#myTable_filter,
+#myTable_info,
+#myTable_paginate {
+    display: none;
+}
+
+.flatpickr-calendar{
+    font-size: 13px;
+}
+.flatpickr-day{
+    font-size: 13px;
+    border-radius: 10px !important;
+}
+
+[type="checkbox"], [type="radio"]{
+    @apply text-theme-600
+}
